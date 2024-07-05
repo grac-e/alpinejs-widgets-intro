@@ -11,10 +11,13 @@ function Counter() {
         decrement() {
             if (this.count > 0) {
                 this.count--;
+                console.log("decrementing");
             }
+            console.log("not decrementing")
         },
         reset() {
             this.count = 0;
-        }
+            console.log("reseting");
+        },
     };
 }
